@@ -1,0 +1,206 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ffccf9, #a0e1e0, #d4a5ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+/* Navigation bar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #ffccf9, #a0e1e0, #d4a5ff);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo a {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(248, 1, 195, 0.233);
+    transition: text-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.navbar-logo a:hover {
+    text-shadow: 2px 2px 4px rgba(80, 209, 248, 0.8);
+    transform: scale(1.1);
+}
+
+.navbar-links {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+    text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.8);
+    transform: scale(1.1);
+}
+
+/* Welcome section styles */
+.welcome-section {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #ffccf9, #a0e1e0, #d4a5ff);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 40px;
+}
+
+/* Background container for paragraph section */
+.background-container {
+    background-color: #d8b3ee73;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.background-container p {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.background-container p:last-child {
+    margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 50px;
+    color: #fdfdfd;
+    text-shadow: 2px 2px 4px rgb(28, 210, 255);
+    margin-top: 14px;
+}
+
+.welcome-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #212b2e;
+    text-shadow: 5px 2px 4px rgb(28, 210, 255)
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* Projects Section */
+.projects-section {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #ffccf9, #a0e1e0, #d4a5ff);
+}
+
+.projects-section h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 50px;
+    color: #333;
+    margin: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Headings (h2) */
+.gallery-group h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff; /* Rich blue for clarity */
+    text-align: center; /* Align to the left (or center if preferred) */
+    margin-bottom: 15px; /* Space below the heading */
+    margin-top: 30px;
+    text-shadow: 4px 4px 8px rgb(235, 105, 252);
+}
+
+/* Image Blocks */
+.image-block {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsive design */
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Space between images */
+}
+
+.image-block img {
+    width: auto; /* Automatically calculate width based on aspect ratio */
+    height: auto; /* Maintain natural height */
+    max-height: 200px; /* Optional: Limit the maximum height */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.image-block img:hover {
+    transform: scale(3); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Footer styles */
+.footer {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ffccf9, #a0e1e0, #d4a5ff);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgb(85, 215, 248);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-links a {
+        font-size: 16px;
+    }
+
+    .welcome-section {
+        padding: 30px;
+        border-radius: 10px;
+    }
+}
